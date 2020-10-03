@@ -1,0 +1,7 @@
+<!ELEMENT square EMPTY>
+<!ATTLIST square area CDATA "1,1">
+<!ELEMENT circle EMPTY>
+<!ATTLIST circle perimiter CDATA "0 * 3.14">
+<!ELEMENT drawing EMPTY>
+<!ATTLIST drawing sides_length CDATA "0,0">
+<!ATTLIST drawing color CDATA "#ff0000">
