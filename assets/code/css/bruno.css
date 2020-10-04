@@ -2,35 +2,36 @@
   --magrin-padding: 0;
 }
 * {
-  magrin: var(--magrin-padding);
-  padding: var(--magrin-padding);
-  resize: none;
+  magrin: var(--magrin-padding) !important;
+  padding: var(--magrin-padding) !important;
+  resize: none !important;
+  box-sizing: border-box !important;
 }
 .round-edges {
   border-radius: 25px;
 }
 @media only screen and (min-width: 1200px) {
   .whole {
-    width: 100%;
-    display: block;
+    width: 100% !important;
+    display: block !important;
   }
   .threequarter {
-    width: 75%;
-    display: inline;
+    width: 75% !important;
+    display: inline !important;
   }
   .half {
-    width: 50%;
-    display: inline;
+    width: 50% !important;
+    display: inline !important;
   }
   .quarter {
-    width: 50%;
-    display: inline;
+    width: 50% !important;
+    display: inline !important;
   }
   .hide-desktop {
-    display: none;
+    display: none !important;
   }
   .hide-largetablet, .hide-smalltablet, .hide-phone {
-    display: block;
+    display: block !important;
   }
 }
 a:link, a:active, a:hover, a:visited {
@@ -41,14 +42,14 @@ video, img {
 }
 @media only screen and (max-width: 600px) {
   .whole, .threequarter, .half, .quarter {
-    width: 100%;
-    display: block;
+    width: 100% !important;
+    display: block !important;
   }
   .hide-desktop, .hide-largetablet, .hide-smalltablet {
-    display: block;
+    display: block !important;
   }
   .hide-phone {
-    display: none;
+    display: none !important;
   }
   video, img {
     object-fit: scale-down;
@@ -57,35 +58,41 @@ video, img {
 @media only screen and (min-width: 600px) {
   .whole, .threequarter {
     display: block;
-    width: 100%;
+    width: 100% !important;
   }
   .half, .quarter {
-    width: 50%;
+    width: 50% !important;
   }
   .hide-desktop, .hide-largetablet, .hide-phone {
-    display: block;
+    display: block !important;
   }
   .hide-smalltablet {
-    display: none;
+    display: none !important;
   }
 }
 @media only screen and (min-width: 768px) {
   .hide-desktop, .hide-smalltablet, .hide-phone {
-    display: block;
+    display: block !important;
   }
   .hide-largetablet {
-    display: none;
+    display: none !important;
   }
 }
-button {
+button, input[type="button"] {
   background-color: black;
-  border: none;
+  border: none !important;
   color: white;
   padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
+  text-align: center !important;
+  text-decoration: none !important;
   display: inline;
   font-size: 16px;
   margin: 4px 2px;
-  cursor: pointer;
+  cursor: pointer !important;
 }
+button.default-hover:hover, input[type="button"].default-hover:hover {
+  background-color: gray !important;
+}
+/*
+For download, visit https://brunozhon.github.io/apps/assets/code/css/bruno.css
+*/
