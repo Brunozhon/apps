@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE color SYSTEM "https://brunozhon.github.io/apps/assets/code/dtd/color.dtd">
+<color>
+  <square area="30,30" />
+  <circle perimeter="30 * 3.14" />
+  <drawing sides_length="3,2" color="rgb(128, 128, 128)" />
+</color>
