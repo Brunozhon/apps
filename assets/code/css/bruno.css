@@ -9,27 +9,29 @@
 .round-edges {
   border-radius: 25px;
 }
-.whole {
-  width: 100%;
-  display: block;
-}
-.threequarter {
-  width: 75%;
-  display: inline;
-}
-.half {
-  width: 50%;
-  display: inline;
-}
-.quarter {
-  width: 50%;
-  display: inline;
-}
-.hide-desktop {
-  display: none;
-}
-.hide-largetablet, .hide-smalltablet, .hide-phone {
-  display: block;
+@media only screen and (min-width: 1200px) {
+  .whole {
+    width: 100%;
+    display: block;
+  }
+  .threequarter {
+    width: 75%;
+    display: inline;
+  }
+  .half {
+    width: 50%;
+    display: inline;
+  }
+  .quarter {
+    width: 50%;
+    display: inline;
+  }
+  .hide-desktop {
+    display: none;
+  }
+  .hide-largetablet, .hide-smalltablet, .hide-phone {
+    display: block;
+  }
 }
 a:link, a:active, a:hover, a:visited {
   color: black;
