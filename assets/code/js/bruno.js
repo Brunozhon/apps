@@ -65,3 +65,18 @@ Date.prototype.toReadableDate = function() {
   "." + this.getMilliseconds();
   return txt;
 }
+// Classes
+class Bruno {
+  constructor(src) {
+    this.src = src;
+    this.compile = function() {
+      var elem = document.createElement("SCRIPT");
+      elem.innerHTML = "import" + this.src + ";";
+      elem.id = "data";
+      document.body.appendChild(elem);
+    }
+    this.getBrunoScripts = function() {
+      return document.querySelectorAll("#data");
+    }
+  }
+}
