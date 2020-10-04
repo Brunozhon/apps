@@ -1,0 +1,89 @@
+:root {
+  --magrin-padding: 0;
+}
+* {
+  magrin: var(--magrin-padding);
+  padding: var(--magrin-padding);
+  resize: none;
+}
+.round-edges {
+  border-radius: 25px;
+}
+.whole {
+  width: 100%;
+  display: block;
+}
+.threequarter {
+  width: 75%;
+  display: inline;
+}
+.half {
+  width: 50%;
+  display: inline;
+}
+.quarter {
+  width: 50%;
+  display: inline;
+}
+.hide-desktop {
+  display: none;
+}
+.hide-largetablet, .hide-smalltablet, .hide-phone {
+  display: block;
+}
+a:link, a:active, a:hover, a:visited {
+  color: black;
+}
+video, img {
+  object-fit: cover;
+}
+@media only screen and (max-width: 600px) {
+  .whole, .threequarter, .half, .quarter {
+    width: 100%;
+    display: block;
+  }
+  .hide-desktop, .hide-largetablet, .hide-smalltablet {
+    display: block;
+  }
+  .hide-phone {
+    display: none;
+  }
+  video, img {
+    object-fit: scale-down;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .whole, .threequarter {
+    display: block;
+    width: 100%;
+  }
+  .half, .quarter {
+    width: 50%;
+  }
+  .hide-desktop, .hide-largetablet, .hide-phone {
+    display: block;
+  }
+  .hide-smalltablet {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hide-desktop, .hide-smalltablet, .hide-phone {
+    display: block;
+  }
+  .hide-largetablet {
+    display: none;
+  }
+}
+button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
