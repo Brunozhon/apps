@@ -1,0 +1,2 @@
+These details can help with internal page regeration. DO NOT DELETE
+ANY FILES IN THE ASSETS/REPO-DETAILS PATH.
