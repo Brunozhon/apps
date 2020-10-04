@@ -79,4 +79,22 @@ class Bruno {
       return document.querySelectorAll("#data");
     }
   }
+  run(i) {
+    this.compile();
+    return this.getBrunoScripts(i).innerHTML;
+  }
 }
+class BrunoDOM extends Bruno {
+  constructor(src) {
+    super(src);
+    this.runScriptInnerHTML = function(i) {
+      eval(this.run());
+    }
+  }
+}
+/*
+View the content at:
+https://brunozhon.github.io/app/assets/code/js/bruno.js
+See the docs at:
+https://brunozhon.github.io/docs/
+*/
