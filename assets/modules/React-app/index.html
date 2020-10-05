@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Simple react app</title>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      class App extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {value: "<h1>This is a heading</h1><p>This is a paragraph.</p>"};
+        }
+        handleChange(e) {
+          this.setState({value: e.target.value});
+        }
+        render() {
+          return (
+            <div>
+              <h3>Enter some HTML</h3>
+              <textarea defaultValue={this.state.value} onChange={this.handleChange} />
+              <h3>Output</h3>
+              <div dangerouslySetInnerHTML={this.state.value}></div>
+            </div>
+          );
+        }
+      }
+      ReactDOM.render(<App />, document.getElementById("root"))
+    </script>
+  </body>
+</html>
