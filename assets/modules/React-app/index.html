@@ -22,7 +22,7 @@
               <h3>Enter some HTML</h3>
               <textarea defaultValue={this.state.value} onChange={this.handleChange} />
               <h3>Output</h3>
-              <div dangerouslySetInnerHTML={this.state.value}></div>
+              <div>{this.state.value}</div>
             </div>
           );
         }
