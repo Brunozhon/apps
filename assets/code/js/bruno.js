@@ -75,8 +75,8 @@ class Bruno {
       elem.id = "data";
       document.body.appendChild(elem);
     }
-    this.getBrunoScripts = function() {
-      return document.querySelectorAll("#data");
+    this.getBrunoScripts = function(i) {
+      return document.querySelectorAll("#data")[i];
     }
   }
   run(i) {
@@ -88,13 +88,13 @@ class BrunoDOM extends Bruno {
   constructor(src) {
     super(src);
     this.runScriptInnerHTML = function(i) {
-      eval(this.run());
+      eval(this.run(i));
     }
   }
 }
 /*
-View the content at:
-https://brunozhon.github.io/app/assets/code/js/bruno.js
-See the docs at:
+View the content at:                                     DISTRIBUTED FOR USAGE ONLY. IT IS EXTREMLY
+https://brunozhon.github.io/app/assets/code/js/bruno.js  UNWISE TO EDIT THIS FILE (UNLESS YOU DOWNL
+See the docs at:                                         OAD).
 https://brunozhon.github.io/docs/
 */
